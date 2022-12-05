@@ -2,24 +2,30 @@
   <div id="app">
     <header>Kitalált Étterem</header>
     <main>tartalom</main>
+    <carouselVue></carouselVue>
     <footer> &#169; {{ year }}</footer>
   </div>
 </template>
 
 <script>
-import { computed } from 'vue'
+import { computed} from 'vue'
+import carouselVue from './components/carousel.vue'
 
 export default {
   name: 'app',
   components: {
+    carouselVue
   },
   setup() {
+
+
     const year = computed(() => {
       return new Date().getFullYear()
     })
 
-    return { year }
+   
 
+    return { year}
   }
 }
 </script>
@@ -58,5 +64,28 @@ footer {
   display: grid;
   place-items: center;
   font-weight: bolder;
+}
+
+.carousel {
+  width: 170px;
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.2s;
+}
+
+.card {
+  width: 40px;
+  margin-right: 10px;
+  display: inline-flex;
+
+  height: 40px;
+  background-color: #39b1bd;
+  color: white;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 </style>
