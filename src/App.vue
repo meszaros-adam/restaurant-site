@@ -65,27 +65,4 @@ footer {
   place-items: center;
   font-weight: bolder;
 }
-
-.carousel {
-  width: 170px;
-  overflow: hidden;
-}
-
-.inner {
-  white-space: nowrap;
-  transition: transform 0.2s;
-}
-
-.card {
-  width: 40px;
-  margin-right: 10px;
-  display: inline-flex;
-
-  height: 40px;
-  background-color: #39b1bd;
-  color: white;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-}
 </style>
