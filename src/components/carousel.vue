@@ -6,9 +6,9 @@
                     {{ card }}
                 </div>
             </div>
-            <i @click="prev" class="bi bi-arrow-left carousel-button carousel-button-prev"></i>
-            <i @click="next" class="bi bi-arrow-right carousel-button carousel-button-next"></i>
         </div>
+        <i @click="prev" class="bi bi-arrow-left carousel-button carousel-button-prev"></i>
+        <i @click="next" class="bi bi-arrow-right carousel-button carousel-button-next"></i>
     </div>
 </template>
 
@@ -85,15 +85,18 @@ export default {
 <style>
 .carousel {
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .inner {
     white-space: nowrap;
     transition: transform 0.2s;
+
 }
 
 .card {
-    width: 40px;
+    width: 60px;
     margin-right: 10px;
     display: inline-flex;
 
@@ -107,23 +110,22 @@ export default {
 
 .carousel-container {
     margin: 2rem;
-    padding: 1rem;
+    padding: 2.5rem;
     position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-content: center;
 }
 
 .carousel-button-prev {
     position: absolute;
-    top: 50%;
-    left: 0%;
+    top: calc(50% - 1rem);
+    left: 10%;
 }
 
 .carousel-button-next {
     position: absolute;
-    top: 50%;
-    left: 100%;
+    top: calc(50% - 1rem);
+    right: 10%;
 }
 
 .carousel-button {
@@ -139,6 +141,7 @@ export default {
 }
 
 .carousel-button:hover {
-    background-color: #39b1bd;
+    background-color: var(--mainColor);
+    color: whitesmoke;
 }
 </style>
