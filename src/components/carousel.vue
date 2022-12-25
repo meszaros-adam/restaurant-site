@@ -22,12 +22,6 @@ export default {
         const innerStyles = ref({})
         const step = ref('');
 
-        const setStep = () => {
-            const innerWidth = document.getElementById('inner').offsetWidth;
-            console.log(innerWidth)
-            step.value = `${innerWidth}px`
-        }
-
         const prev = () => {
             setStep()
             moveRight()
@@ -49,6 +43,12 @@ export default {
                 resetTranslate()
             })
         }
+
+        const setStep = () => {
+            const innerWidth = document.getElementById('inner').offsetWidth;
+            step.value = `${innerWidth}px`
+        }
+
 
         const afterTransition = (callback) => {
             const listener = () => {
@@ -88,12 +88,13 @@ export default {
     display: flex;
     justify-content: center;
     background-color: var(--mainColor);
+    border-radius: 10px;
+    user-select: none;
 }
 
 .inner {
     white-space: nowrap;
     transition: transform 0.2s;
-    user-select: none;
 }
 
 .card {
@@ -103,7 +104,6 @@ export default {
     border-radius: 4px;
     width: 100%;
     justify-content: center;
-
 }
 
 img {
@@ -142,10 +142,12 @@ img {
     aspect-ratio: 1/1;
     display: grid;
     place-items: center;
+    box-shadow: 2px 2px 2px;
+    background-color: var(--secondaryColor);
 }
 
 .carousel-button:hover {
     background-color: var(--mainColor);
-    color: whitesmoke;
+    color: var(--secondaryColor)
 }
 </style>

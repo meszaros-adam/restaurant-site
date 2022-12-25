@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <header>Kitalált Étterem</header>
-    <main>tartalom</main>
-    <carouselVue></carouselVue>
+    <navVue></navVue>
+    <main>
+      <carouselVue></carouselVue>
+    </main>
     <footer> &#169; {{ year }}</footer>
   </div>
 </template>
@@ -10,11 +12,13 @@
 <script>
 import { computed} from 'vue'
 import carouselVue from './components/carousel.vue'
+import navVue from './components/nav.vue'
 
 export default {
   name: 'app',
   components: {
-    carouselVue
+    carouselVue,
+    navVue
   },
   setup() {
 
