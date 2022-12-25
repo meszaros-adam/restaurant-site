@@ -1,24 +1,31 @@
 <template>
   <div id="app">
-    <header>Kitalált Étterem</header>
-    <navVue></navVue>
-    <main>
-      <carouselVue></carouselVue>
-    </main>
-    <footer> &#169; {{ year }}</footer>
+    <div class="page-container">
+      <div class="content-wrap">
+        <header>Kitalált Étterem</header>
+        <navVue></navVue>
+        <main>
+          <carouselVue></carouselVue>
+          <openingVue></openingVue>
+        </main>
+      </div>
+      <footer> &#169; {{ year }}</footer>
+    </div>
   </div>
 </template>
 
 <script>
-import { computed} from 'vue'
+import { computed } from 'vue'
 import carouselVue from './components/carousel.vue'
 import navVue from './components/nav.vue'
+import openingVue from './components/opening.vue'
 
 export default {
   name: 'app',
   components: {
     carouselVue,
-    navVue
+    navVue,
+    openingVue,
   },
   setup() {
 
@@ -27,9 +34,7 @@ export default {
       return new Date().getFullYear()
     })
 
-   
-
-    return { year}
+    return { year }
   }
 }
 </script>
@@ -56,17 +61,26 @@ header {
   font-weight: bolder;
   font-size: 50px;
   text-shadow: var(--shadow);
-
 }
 
 footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   background: var(--mainColor);
-  width: 100vw;
-  height: 3rem;
+  width: 100%;
+  height: 2.5rem;
   display: grid;
   place-items: center;
   font-weight: bolder;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;
+  /* Footer height */
 }
 </style>
