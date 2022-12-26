@@ -85,39 +85,39 @@ export default {
 <style>
 .carousel {
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: var(--mainColor);
-    border-radius: 10px;
+    background-color: var(--tertiaryColor);
+    border-radius: var(--borderRadius);
     user-select: none;
 }
 
 .inner {
     white-space: nowrap;
     transition: transform 0.2s;
+    user-select: none;
 }
 
 .card {
-    margin-right: 10px;
     display: inline-flex;
     color: white;
-    border-radius: 4px;
-    width: 100%;
+    width: 100%; 
     justify-content: center;
+    user-select: none;
+    vertical-align: middle;
 }
 
-img {
+.carousel img {
     max-width: 100%;
     max-height: 500px;
+    user-select: none;
 }
 
 
 .carousel-container {
     margin: 2rem;
-    padding: 2.5rem;
     position: relative;
     display: grid;
     place-content: center;
+    user-select: none;
 }
 
 .carousel-button-prev {

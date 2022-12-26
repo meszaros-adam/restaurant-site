@@ -45,7 +45,9 @@ export default {
 :root {
   --mainColor: #6B5E62;
   --secondaryColor: #D5CAD6;
+  --tertiaryColor: #84757a;
   --shadow: 2px 2px grey;
+  --borderRadius: 2rem;
 }
 
 body {
@@ -82,5 +84,18 @@ footer {
 .content-wrap {
   padding-bottom: 2.5rem;
   /* Footer height */
+}
+
+main {
+  padding-bottom: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center{
+  display: grid;
+  place-content: center;
 }
 </style>

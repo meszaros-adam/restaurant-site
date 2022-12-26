@@ -7,7 +7,7 @@
             <a href="">Elérhetőség</a>
         </li>
         <li>
-            <a href="">Nyitvatartás</a>
+            <a href="#opening">Nyitvatartás</a>
         </li>
     </ul>
 </template>
@@ -19,7 +19,7 @@
     justify-content: center;
     padding: 10px 20px;
     margin-top: 0;
-    background-color: #84757a;
+    background-color: var(--tertiaryColor);
     border-color: black;
     border-style: dashed;
     border-width: 2px 0px;
