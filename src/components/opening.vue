@@ -76,11 +76,6 @@
     font-size: xx-large;
 }
 
-#opening .center {
-    margin-bottom: 5rem;
-    font-size: 50px;
-}
-
 @media screen and (max-width: 992px) {
     #opening .flex {
         flex-direction: column;

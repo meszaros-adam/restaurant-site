@@ -7,6 +7,7 @@
         <main>
           <carouselVue></carouselVue>
           <openingVue></openingVue>
+          <menuVue></menuVue>
           <contactVue></contactVue>
         </main>
       </div>
@@ -21,6 +22,7 @@ import carouselVue from './components/carousel.vue'
 import navVue from './components/nav.vue'
 import openingVue from './components/opening.vue'
 import contactVue from './components/contact.vue'
+import menuVue from './components/menu.vue'
 export default {
   name: 'app',
   components: {
@@ -28,6 +30,7 @@ export default {
     navVue,
     openingVue,
     contactVue,
+    menuVue,
   },
   setup() {
 
@@ -53,10 +56,19 @@ export default {
   font-weight: bolder;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
   background: var(--secondaryColor);
   margin: 0;
+}
+
+h1 {
+  margin-bottom: 5rem;
+  font-size: 50px;
 }
 
 header {
@@ -79,6 +91,10 @@ footer {
   font-weight: bolder;
 }
 
+main {
+  padding-bottom: 100vh;
+}
+
 .page-container {
   position: relative;
   min-height: 100vh;
@@ -89,16 +105,15 @@ footer {
   /* Footer height */
 }
 
-main {
-  padding-bottom: 100vh;
-}
+/* Utlities */
 
-html {
-  scroll-behavior: smooth;
-}
-
-.center{
+.center {
   display: grid;
   place-content: center;
+}
+
+.container{
+  margin: 3rem;
+  padding: 3rem;
 }
 </style>

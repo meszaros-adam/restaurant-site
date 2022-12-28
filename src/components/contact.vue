@@ -34,6 +34,8 @@
     margin: 2rem;
     display: flex;
     justify-content: space-around;
+    border-bottom: 5px dashed black;
+    padding-bottom: 5rem;
 }
 
 .contact li {
@@ -67,6 +69,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    border-radius: var(--borderRadius);
 }
 
 @media screen and (max-width: 992px) {
@@ -77,6 +80,5 @@
     .map {
         width: auto;
     }
-
 }
 </style>

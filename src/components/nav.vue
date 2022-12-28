@@ -1,7 +1,7 @@
 <template>
     <ul class="nav">
         <li>
-            <a href="">Menü</a>
+            <a href="#menu">Menü</a>
         </li>
         <li>
             <a href="#contact">Kapcsolat</a>
