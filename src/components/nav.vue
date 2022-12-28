@@ -4,7 +4,7 @@
             <a href="">Menü</a>
         </li>
         <li>
-            <a href="">Elérhetőség</a>
+            <a href="#contact">Kapcsolat</a>
         </li>
         <li>
             <a href="#opening">Nyitvatartás</a>

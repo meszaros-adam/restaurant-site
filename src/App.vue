@@ -7,6 +7,7 @@
         <main>
           <carouselVue></carouselVue>
           <openingVue></openingVue>
+          <contactVue></contactVue>
         </main>
       </div>
       <footer> &#169; {{ year }}</footer>
@@ -19,13 +20,14 @@ import { computed } from 'vue'
 import carouselVue from './components/carousel.vue'
 import navVue from './components/nav.vue'
 import openingVue from './components/opening.vue'
-
+import contactVue from './components/contact.vue'
 export default {
   name: 'app',
   components: {
     carouselVue,
     navVue,
     openingVue,
+    contactVue,
   },
   setup() {
 
@@ -48,6 +50,7 @@ export default {
   --tertiaryColor: #84757a;
   --shadow: 2px 2px grey;
   --borderRadius: 2rem;
+  font-weight: bolder;
 }
 
 body {

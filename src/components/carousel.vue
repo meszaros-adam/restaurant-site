@@ -85,8 +85,6 @@ export default {
 <style>
 .carousel {
     overflow: hidden;
-    background-color: var(--tertiaryColor);
-    border-radius: var(--borderRadius);
     user-select: none;
 }
 
@@ -99,7 +97,7 @@ export default {
 .card {
     display: inline-flex;
     color: white;
-    width: 100%; 
+    width: 100%;
     justify-content: center;
     user-select: none;
     vertical-align: middle;
