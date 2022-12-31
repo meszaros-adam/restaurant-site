@@ -1,50 +1,50 @@
 <template>
     <div id="opening">
-        <h1 class="center">Nyitvatartás</h1>
-        <div class="flex">
-            <div>
-                <table>
-                    <tr>
-                        <th>Nap</th>
-                        <th>Nyitvatartás</th>
-                    </tr>
-                    <tr>
-                        <td>Hétfő</td>
-                        <td>08-20</td>
-                    </tr>
-                    <tr>
-                        <td>Kedd</td>
-                        <td>08-20</td>
-                    </tr>
-                    <tr>
-                        <td>Szerda</td>
-                        <td>08-20</td>
-                    </tr>
-                    <tr>
-                        <td>Csütörtök</td>
-                        <td>08-20</td>
-                    </tr>
-                    <tr>
-                        <td>Péntek</td>
-                        <td>08-20</td>
-                    </tr>
-                    <tr>
-                        <td>Szombat</td>
-                        <td>08-20</td>
-                    </tr>
-                    <tr>
-                        <td>Vasárnap</td>
-                        <td>08-20</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <img src="../assets/images/door_5481543.jpg" alt="">
+        <div class="container">
+            <h1 class="center">Nyitvatartás</h1>
+            <div class="flex">
+                <div>
+                    <table>
+                        <tr>
+                            <th>Nap</th>
+                            <th>Nyitvatartás</th>
+                        </tr>
+                        <tr>
+                            <td>Hétfő</td>
+                            <td>08-20</td>
+                        </tr>
+                        <tr>
+                            <td>Kedd</td>
+                            <td>08-20</td>
+                        </tr>
+                        <tr>
+                            <td>Szerda</td>
+                            <td>08-20</td>
+                        </tr>
+                        <tr>
+                            <td>Csütörtök</td>
+                            <td>08-20</td>
+                        </tr>
+                        <tr>
+                            <td>Péntek</td>
+                            <td>08-20</td>
+                        </tr>
+                        <tr>
+                            <td>Szombat</td>
+                            <td>08-20</td>
+                        </tr>
+                        <tr>
+                            <td>Vasárnap</td>
+                            <td>08-20</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img src="../assets/images/door_5481543.jpg" alt="">
+                </div>
             </div>
         </div>
-
     </div>
-
 </template>
 
 <style >
@@ -54,7 +54,6 @@
 
 #opening {
     background-color: var(--mainColor);
-    padding: 3rem;
 }
 
 #opening .flex {
@@ -65,7 +64,7 @@
 
 #opening img {
     border-radius: var(--borderRadius);
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -83,7 +82,7 @@
 
     #opening img {
         box-sizing: border-box;
-        padding: 1rem;
+        padding: 1rem 0;
     }
 }
 </style>

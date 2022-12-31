@@ -8,6 +8,7 @@
           <carouselVue></carouselVue>
           <openingVue></openingVue>
           <menuVue></menuVue>
+          <aboutUsVue> </aboutUsVue>
           <contactVue></contactVue>
         </main>
       </div>
@@ -27,6 +28,7 @@ import navVue from './components/nav.vue'
 import openingVue from './components/opening.vue'
 import contactVue from './components/contact.vue'
 import menuVue from './components/menu.vue'
+import aboutUsVue from './components/aboutUs.vue'
 export default {
   name: 'app',
   components: {
@@ -35,10 +37,9 @@ export default {
     openingVue,
     contactVue,
     menuVue,
+    aboutUsVue,
   },
   setup() {
-
-
     const year = computed(() => {
       return new Date().getFullYear()
     })
@@ -47,16 +48,16 @@ export default {
       window.scrollTo(0, 0);
     }
 
+    /* up arrow */
     let upArrowId = null;
 
     onMounted(() => {
       upArrowId = document.getElementById("up-arrow")
     })
 
-
     const scrollFunc = () => {
       const y = window.scrollY
-      if (y > 800) {
+      if (y > 600) {
         upArrowId.className = "bi bi-arrow-up-circle-fill show"
       } else {
         upArrowId.className = "bi bi-arrow-up-circle-fill hide"
@@ -64,6 +65,7 @@ export default {
     }
 
     window.addEventListener("scroll", scrollFunc)
+    /* up arrow */
 
     return { year, scrollUp }
   }
@@ -144,6 +146,13 @@ main {
   padding: 3rem;
 }
 
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
 /* up arrow */
 #up-arrow {
   position: fixed;
@@ -158,12 +167,12 @@ main {
   color: #3C4048;
 }
 
-.hide {
-  opacity: 0;
-  left: -100%;
+#up-arrow.hide {
+  position: fixed;
+  right: -100%;
 }
 
-.show {
+#up-arrow.show {
   opacity: 1;
 }
 </style>

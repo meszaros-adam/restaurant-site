@@ -1,14 +1,16 @@
 <template>
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="inner" :style="[innerStyles]" id="inner">
-                <div class="card" v-for="(image, i) in images" :key="i">
-                    <img :src="image" alt="">
+    <div class="container">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="inner" :style="[innerStyles]" id="inner">
+                    <div class="card" v-for="(image, i) in images" :key="i">
+                        <img :src="image" alt="">
+                    </div>
                 </div>
             </div>
+            <i @click="prev" class="bi bi-arrow-left carousel-button carousel-button-prev"></i>
+            <i @click="next" class="bi bi-arrow-right carousel-button carousel-button-next"></i>
         </div>
-        <i @click="prev" class="bi bi-arrow-left carousel-button carousel-button-prev"></i>
-        <i @click="next" class="bi bi-arrow-right carousel-button carousel-button-next"></i>
     </div>
 </template>
 
@@ -109,9 +111,7 @@ export default {
     user-select: none;
 }
 
-
 .carousel-container {
-    margin: 2rem;
     position: relative;
     display: grid;
     place-content: center;

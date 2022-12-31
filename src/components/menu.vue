@@ -1,46 +1,44 @@
 <template>
-    <div class="container" id="menu">
-        <h1 class="center">Menü</h1>
-        <table class="menu-table">
-            <tr>
-                <th>Étel</th>
-                <th>Ár</th>
-                <th>Ország</th>
-            </tr>
-            <tr>
-                <td>Hamburger</td>
-                <td>1500 Ft</td>
-                <td>USA</td>
-            </tr>
-            <tr>
-                <td>Pizza</td>
-                <td>3000 Ft</td>
-                <td>Olaszország</td>
-            </tr>
-            <tr>
-                <td>Kebab</td>
-                <td>1500 Ft</td>
-                <td>Törökország</td>
-            </tr>
-            <tr>
-                <td>Kebab tál</td>
-                <td>2500 Ft</td>
-                <td>Törökország</td>
-            </tr>
-            <tr>
-                <td>Gyros pitában</td>
-                <td>1500 Ft</td>
-                <td>Görögország</td>
-            </tr>
-        </table>
+    <div id="menu">
+        <div class="container">
+            <h1 class="center">Menü</h1>
+            <table class="menu-table">
+                <tr>
+                    <th>Étel</th>
+                    <th>Ár</th>
+                    <th>Ország</th>
+                </tr>
+                <tr>
+                    <td>Hamburger</td>
+                    <td>1500 Ft</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>3000 Ft</td>
+                    <td>Olaszország</td>
+                </tr>
+                <tr>
+                    <td>Kebab</td>
+                    <td>1500 Ft</td>
+                    <td>Törökország</td>
+                </tr>
+                <tr>
+                    <td>Kebab tál</td>
+                    <td>2500 Ft</td>
+                    <td>Törökország</td>
+                </tr>
+                <tr>
+                    <td>Gyros pitában</td>
+                    <td>1500 Ft</td>
+                    <td>Görögország</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </template>
 
 <style>
-#menu {
-    border-bottom: 5px dashed black;
-}
-
 .menu-table {
     width: 100%;
     border-collapse: collapse;

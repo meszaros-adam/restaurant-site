@@ -1,49 +1,48 @@
 <template>
-    <div class="contact" id="contact">
-        <div>
-            <h1>Kapcsolat:</h1>
-            <ul>
-                <li>
-                    Telefon: +363213827
-                </li>
-                <li>
-                    Cím: 9400, Sopron, Kitalált utca 2
-                </li>
-                <li>
-                    Email: kitalalt-etterem@gmail.com
-                </li>
-                <li>
-                    Fax: 1020123412
-                </li>
-            </ul>
-        </div>
-        <div class="map">
-            <h1>Térkép:</h1>
-            <div class="map-responsive">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2059.150999016125!2d16.59310988145115!3d47.68467112874398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1shu!2shu!4v1672216356143!5m2!1shu!2shu"
-                    width="600" height="450" style="border:0;" allowfullscreen></iframe>
+    <div id="contact">
+        <div class="container">
+            <div>
+                <h1>Kapcsolat:</h1>
+                <ul>
+                    <li>
+                        Telefon: +363213827
+                    </li>
+                    <li>
+                        Cím: 9400, Sopron, Kitalált utca 2
+                    </li>
+                    <li>
+                        Email: kitalalt-etterem@gmail.com
+                    </li>
+                    <li>
+                        Fax: 1020123412
+                    </li>
+                </ul>
             </div>
-
+            <div class="map">
+                <h1>Térkép:</h1>
+                <div class="map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2059.150999016125!2d16.59310988145115!3d47.68467112874398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1shu!2shu!4v1672216356143!5m2!1shu!2shu"
+                        width="600" height="450" style="border:0;" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
-.contact {
-    margin: 2rem;
+#contact .container {
     display: flex;
     justify-content: space-around;
     border-bottom: 5px dashed black;
-    padding-bottom: 5rem;
 }
 
-.contact li {
+#contact li {
     list-style: none;
     margin-bottom: 2rem;
 }
 
-.contact li::before {
+#contact li::before {
     content: '';
     display: inline-block;
     height: 2rem;
@@ -73,11 +72,10 @@
 }
 
 @media screen and (max-width: 992px) {
-    .contact {
+    #contact .container {
         flex-direction: column;
     }
-
-    .map {
+    .map{
         width: auto;
     }
 }
