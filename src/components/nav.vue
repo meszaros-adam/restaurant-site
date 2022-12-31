@@ -1,13 +1,16 @@
 <template>
     <ul class="nav">
         <li>
+            <a href="#opening">Nyitvatartás</a>
+        </li>
+        <li>
             <a href="#menu">Menü</a>
         </li>
         <li>
-            <a href="#contact">Kapcsolat</a>
+            <a href="#about-us">Rólunk</a>
         </li>
         <li>
-            <a href="#opening">Nyitvatartás</a>
+            <a href="#contact">Kapcsolat</a>
         </li>
     </ul>
 </template>
